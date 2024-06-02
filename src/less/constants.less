@@ -1,0 +1,119 @@
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url('static/fonts/gilroy/Gilroy-Medium.ttf');
+}
+
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url('static/fonts/gilroy/Gilroy-Regular.ttf');
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url('static/fonts/gilroy/Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url('static/fonts/gilroy/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Tavolga;
+    src: url('static/fonts/tavolga/Tavolga.ttf');
+    font-weight: 900;
+}
+
+.button () {
+    background-image: -moz-linear-gradient( 90deg, @color-btn1 0%, @color-btn2 100%);
+    background-image: -webkit-linear-gradient( 90deg, @color-btn1 0%, @color-btn2 100%);
+    background-image: -ms-linear-gradient( 90deg, @color-btn1 0%, @color-btn2 100%);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Gilroy-Bold";
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    transition: all .5s;
+    &:hover {
+        box-shadow: 0px 5px 9px 1px rgba(130, 19, 40, 0.5);
+    }
+}
+
+
+@present-gradient1: #710808;
+@present-gradient2: #d74848;
+@footer-color: #c0707c;
+@footer-text: rgb(227, 172, 180);
+@color-btn1: rgb(113, 8, 8);
+@color-btn2: rgb(215, 72, 72);
+@main-color: #eba8b1;
+@secondary-color: #ffefef;
+@accent-color: #821313;
+@text-color: #fff;
+@text-color-dark: rgb(51, 7, 7);
+
+
+
+// @present-gradient1: #71081e;
+// @present-gradient2: #d7485c;
+// @footer-color: #c0707c;
+// @footer-text: rgb(227, 172, 180);
+// @color-btn1: rgb(113,8,30);
+// @color-btn2: rgb(215,72,92);
+// @main-color: #eba8b1;
+// @secondary-color: #ffefef;
+// @accent-color: #821328;
+// @text-color: #fff;
+// @text-color-dark: rgb(51, 25, 7);
+
+@keyframes bubbles {
+    from {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(3.5);
+        opacity: 0;
+    }
+}
+
+@keyframes updown {
+    from{
+        transform: translate(0, 20px);
+    }
+    50% {
+        transform: translate(0, -20px);
+    }
+    to {
+        transform: translate(0, 20px);
+    }
+}
+
+@keyframes lds-circle {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  }
