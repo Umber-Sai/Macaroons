@@ -2,7 +2,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "dev" : "npx webpack serve --open"
   },
   "dependencies": {
     "jquery": "^3.7.1"

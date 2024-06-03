@@ -13,6 +13,7 @@
 <script defer src="main.js"></script></head>
 
 <body>
+    
     <section class="first__block">
         <header class="header">
             <div class="container header__container">
@@ -20,18 +21,15 @@
                     <img src="static/images/logo.png" alt="logo">
                 </div>
 
-                <div class="burger" id="burger">
-                    <div class="burger__pass"></div>
-                    <div class="burger__pass"></div>
-                    <div class="burger__pass"></div>
-                </div>
-
-                <nav class="menu" id="menu">
-                    <div class="close" id="close">✕</div>
-                    <ul class="menu__list">
+                <nav id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
                         <li class="menu__item">
                             <a href="#" class="menu__link cakes">Пироженки</a>
-                        </li> 
+                        </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link aboutUs">О нас</a>
                         </li>

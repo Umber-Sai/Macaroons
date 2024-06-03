@@ -124,3 +124,14 @@ window.addEventListener("DOMContentLoaded", function() {
   
   });
 
+
+  const present = document.querySelector('.present');
+  const presentHolder = document.querySelector('.present__holder');
+
+  present.onclick = () => {
+    present.classList.add('active');
+    setTimeout(() => {
+        present.classList.remove('active');
+    }, 3000)
+  }
+
